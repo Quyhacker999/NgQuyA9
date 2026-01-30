@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bình Định Beauty Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans bg-gray-50">
+    <custom-navbar></custom-navbar>
+    
+    <main class="container mx-auto px-4 py-8">
+        <!-- Hero Section -->
+        <section class="relative h-96 rounded-xl overflow-hidden mb-12">
+            <img src="http://static.photos/nature/1200x630/42" alt="Bình Định Landscape" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-8">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-white mb-2">Bình Định</h1>
+                    <p class="text-xl text-white/90 max-w-2xl">Vùng đất của những bãi biển đẹp, di tích lịch sử và văn hóa đặc sắc</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="mb-16">
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Giới thiệu về Bình Định</h2>
+                    <p class="text-gray-600 mb-4">Bình Định là một tỉnh thuộc vùng Duyên hải Nam Trung Bộ, Việt Nam. Nơi đây nổi tiếng với những bãi biển đẹp, di tích lịch sử và văn hóa đặc sắc.</p>
+                    <p class="text-gray-600 mb-4">Tỉnh có diện tích tự nhiên khoảng 6.025 km², dân số hơn 1,5 triệu người. Thành phố Quy Nhơn là trung tâm kinh tế, văn hóa của tỉnh.</p>
+                    <div class="grid grid-cols-2 gap-4 mt-6">
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                            <div class="flex items-center gap-2">
+                                <i data-feather="map-pin" class="text-blue-500"></i>
+                                <h3 class="font-medium">Vị trí</h3>
+                            </div>
+                            <p class="text-sm text-gray-500 mt-1">Duyên hải Nam Trung Bộ</p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                            <div class="flex items-center gap-2">
+                                <i data-feather="users" class="text-blue-500"></i>
+                                <h3 class="font-medium">Dân số</h3>
+                            </div>
+                            <p class="text-sm text-gray-500 mt-1">1.5 triệu người</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="http://static.photos/travel/1024x576/10" alt="Bình Định Map" class="w-full rounded-xl shadow-md">
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Điểm nổi bật</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100">
+                    <img src="http://static.photos/beach/640x360/5" alt="Biển Quy Nhơn" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-gray-800">Biển Quy Nhơn</h3>
+                        <p class="text-gray-600">Những bãi biển đẹp với cát trắng, nước trong xanh và cảnh quan thiên nhiên hùng vĩ.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100">
+                    <img src="http://static.photos/history/640x360/7" alt="Tháp Chăm" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-gray-800">Tháp Chăm</h3>
+                        <p class="text-gray-600">Cụm tháp Chăm cổ kính với kiến trúc độc đáo, minh chứng cho nền văn hóa Chăm Pa rực rỡ.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100">
+                    <img src="http://static.photos/food/640x360/3" alt="Ẩm thực" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-gray-800">Ẩm thực</h3>
+                        <p class="text-gray-600">Đặc sản địa phương phong phú như bún chả cá, bánh ít lá gai, bánh hỏi cháo lòng.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Culture Section -->
+        <section class="mb-16 bg-blue-50 rounded-xl p-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Văn hóa & Lễ hội</h2>
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+                <div class="md:w-1/2">
+                    <img src="http://static.photos/culture/640x360/8" alt="Văn hóa Bình Định" class="w-full rounded-xl shadow-md">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Võ cổ truyền Bình Định</h3>
+                    <p class="text-gray-600 mb-4">Bình Định được mệnh danh là "đất võ" với truyền thống võ thuật lâu đời. Võ cổ truyền Bình Định là di sản văn hóa phi vật thể quốc gia.</p>
+                    
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Lễ hội đặc sắc</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <i data-feather="chevron-right" class="text-blue-500 mt-1"></i>
+                            <span>Lễ hội Đống Đa (Tây Sơn)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-feather="chevron-right" class="text-blue-500 mt-1"></i>
+                            <span>Lễ hội Cầu Ngư</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i data-feather="chevron-right" class="text-blue-500 mt-1"></i>
+                            <span>Lễ hội Tháp Bánh Ít</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
